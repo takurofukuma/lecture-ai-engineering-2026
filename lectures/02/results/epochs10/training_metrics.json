@@ -1,0 +1,54 @@
+{
+  "config": {
+    "base_model": "Qwen/Qwen3.5-0.8B",
+    "revision": "2fc06364715b967f1860aea9cf38778875588b17",
+    "seed": 42,
+    "num_train_epochs": 10,
+    "warmup_steps": 6,
+    "lr": 0.0002,
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "max_seq_len": 512,
+    "max_new_tokens": 96,
+    "gen": {
+      "do_sample": false
+    },
+    "work_dir": "/content/qlora_lab",
+    "drive_dir": "/content/drive/MyDrive/aie2026/qlora_lab"
+  },
+  "global_step": 20,
+  "last_logged_loss": 0.09904417991638184,
+  "train_runtime_seconds": 110.5881,
+  "train_loss_average": 0.8309893846511841,
+  "log_history": [
+    {
+      "loss": 1.5629345893859863,
+      "grad_norm": 2.1433019638061523,
+      "learning_rate": 0.000178183148246803,
+      "entropy": 1.842542576789856,
+      "num_tokens": 17860.0,
+      "mean_token_accuracy": 0.687270787358284,
+      "epoch": 5.0,
+      "step": 10
+    },
+    {
+      "loss": 0.09904417991638184,
+      "grad_norm": 0.3812580406665802,
+      "learning_rate": 2.5072087818176382e-06,
+      "entropy": 0.20307049080729483,
+      "num_tokens": 35720.0,
+      "mean_token_accuracy": 0.9827358722686768,
+      "epoch": 10.0,
+      "step": 20
+    },
+    {
+      "train_runtime": 110.5881,
+      "train_samples_per_second": 1.266,
+      "train_steps_per_second": 0.181,
+      "total_flos": 110607260520960.0,
+      "train_loss": 0.8309893846511841,
+      "epoch": 10.0,
+      "step": 20
+    }
+  ]
+}

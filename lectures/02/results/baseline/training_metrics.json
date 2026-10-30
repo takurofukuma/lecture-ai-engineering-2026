@@ -1,0 +1,74 @@
+{
+  "config": {
+    "base_model": "Qwen/Qwen3.5-0.8B",
+    "revision": "2fc06364715b967f1860aea9cf38778875588b17",
+    "seed": 42,
+    "num_train_epochs": 20,
+    "warmup_steps": 6,
+    "lr": 0.0002,
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "max_seq_len": 512,
+    "max_new_tokens": 96,
+    "gen": {
+      "do_sample": false
+    },
+    "work_dir": "/content/qlora_lab",
+    "drive_dir": "/content/drive/MyDrive/aie2026/qlora_lab"
+  },
+  "global_step": 40,
+  "last_logged_loss": 0.014168758690357209,
+  "train_runtime_seconds": 223.7649,
+  "train_loss_average": 0.4192473914474249,
+  "log_history": [
+    {
+      "loss": 1.559559440612793,
+      "grad_norm": 2.1072957515716553,
+      "learning_rate": 0.00019618256431728194,
+      "entropy": 1.833730521798134,
+      "num_tokens": 17860.0,
+      "mean_token_accuracy": 0.6873562455177307,
+      "epoch": 5.0,
+      "step": 10
+    },
+    {
+      "loss": 0.08428096771240234,
+      "grad_norm": 0.2695973217487335,
+      "learning_rate": 0.00013612416661871533,
+      "entropy": 0.174773970246315,
+      "num_tokens": 35720.0,
+      "mean_token_accuracy": 0.9844484448432922,
+      "epoch": 10.0,
+      "step": 20
+    },
+    {
+      "loss": 0.018980398774147034,
+      "grad_norm": 0.22282983362674713,
+      "learning_rate": 4.735678371226441e-05,
+      "entropy": 0.044324801117181775,
+      "num_tokens": 53580.0,
+      "mean_token_accuracy": 0.9958183288574218,
+      "epoch": 15.0,
+      "step": 30
+    },
+    {
+      "loss": 0.014168758690357209,
+      "grad_norm": 0.19368329644203186,
+      "learning_rate": 4.2658237049655323e-07,
+      "entropy": 0.03166951471939683,
+      "num_tokens": 71440.0,
+      "mean_token_accuracy": 0.9963599532842636,
+      "epoch": 20.0,
+      "step": 40
+    },
+    {
+      "train_runtime": 223.7649,
+      "train_samples_per_second": 1.251,
+      "train_steps_per_second": 0.179,
+      "total_flos": 221402196196608.0,
+      "train_loss": 0.4192473914474249,
+      "epoch": 20.0,
+      "step": 40
+    }
+  ]
+}
